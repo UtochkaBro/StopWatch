@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClickResetTimer(View view){
         isRunning = false;
         seconds = 0;
+        Toast.makeText("text");
     }
 
     private void runTimer(){
